@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daftar</title>
+    <link rel="stylesheet" href="daftar.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <h2>Daftar</h2>
+        <form onsubmit="confirmRegistration(event)">
+            <div class="from-group">
+                <label>Masukan Nama</label>
+                <input type="text" required>
+            </div>
+            <div class="from-group">
+                <label>Masukan Email</label>
+                <input type="email" required>
+            </div>
+            <div class="from-group">
+                <label>Masukan Password</label>
+                <input type="password" required>
+            </div>
+            <div>
+                <button type="submit">DAFTAR</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function confirmRegistration(event) {
+            
+            event.preventDefault();
+            
+            
+            let confirmation = confirm("Apakah Anda yakin ingin mendaftar?");
+            
+            
+            if (confirmation) {
+                alert("Registrasi berhasil!");
+               
+                event.target.submit();
+            } else {
+                alert("Registrasi dibatalkan.");
+            }
+        }
+    </script>
+
+    
+</body>
+
+</html>

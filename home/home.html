@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="Home.html">Home</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="/dashboard/dash.html">Dashboard</a>
+    </nav>
+
+    <header>
+
+    </header>
+
+    <article>
+        <h2>Esportify</h2>
+        <p>
+            Esportify adalah sebuah platfrom yang berisi tentang informasi jadwal pertandingan turnamen e-sports
+        </p>
+        <p>
+            Tidak hanya itu platfrom ini juga menyediakan informasi tim, standings, serta detail pertandingan.
+        </p>
+    </article>
+
+    <div class="content">
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Pertandingan 8 Oktober 2024</th>
+                    <th>Pertandingan 9 Oktober 2024</th>
+                </tr>
+            </thead>
+            <tbody id="match-schedule">
+                <tr>
+                    <td>
+                        <ul>
+                            <li>EVOS vs RRQ</li>
+                            <li>ONIC vs AE</li>
+                            <li>BTR vs AURA</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>GEEK FAM vs DEWA</li>
+                            <li>RBL vs EVOS</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="update">Update Jadwal</button>
+    </div>
+    <div id="snackbar"></div>
+    <script src="snackbar.js"></script>
+    <footer>
+        <p>copyright@2024</p>
+    </footer>
+</body>
+
+</html>

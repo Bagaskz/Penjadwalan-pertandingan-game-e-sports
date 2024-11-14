@@ -1,0 +1,149 @@
+
+body {
+    background-image: url(sky.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: hsl(0, 87%, 36%);
+    text-align: center;
+    
+    width: 206vh;
+    height: 80px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fffdfd;
+    margin : 0 1
+    em;
+    margin-top: 14px;
+    font-size: 24px;
+    padding: 0.90em;
+    text-align: center;
+    
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+header {
+    background-image: url(id.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+h2 {
+    font-size: 3.4em;
+}
+p {
+    font-size: 1.2em;
+}
+
+article {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.content {
+    max-width: 600px;
+    margin: 3em auto;
+}
+
+table {
+    width: 100%;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75em;
+    text-align: center;
+    border: solid ;
+}
+
+th {
+    background-color: hsl(0, 0%, 100%);
+    border: solid;
+}
+
+th a{
+    text-decoration: none;
+    color: #fffdfd;
+}
+
+td ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+footer {
+    background-color: hsl(0, 87%, 36%);
+    width: 206vh;
+    height: 80px;
+    padding: 0.90em;
+    text-align: center;
+    color: #fffdfd
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #1c73e4;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+button#update {
+    background-color: #f0f0f0; 
+    color: #333; 
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+button#update:hover {
+    background-color: #177be5; 
+    color: white; 
+}
